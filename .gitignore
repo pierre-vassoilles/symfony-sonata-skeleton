@@ -1,0 +1,36 @@
+# APP
+/var/cache/*
+/var/logs/*
+/app/config/parameters.yml
+/var/bootstrap.php.cache
+/vendor
+
+# WEB
+/web/bundles
+/web/media
+/web/assets
+
+
+# NPM
+/src/CoreBundle/Resources/node_modules
+/src/CoreBundle/Resources/public/css/app.min.css
+/src/CoreBundle/Resources/public/css/app.min.css.map
+
+/src/CoreBundle/Resources/public/js/app.min.js
+/src/CoreBundle/Resources/public/js/app.min.js.map
+
+#PHPStorm
+/.idea
+
+/data
+!/data/.gitkeep
+
+#Sitemaps
+/web/sitemap.*
+
+# Entity Export
+/src/CoreBundle/EntityExport
+/src/*/Entity/*.php~
+
+#CSSLint
+/src/CoreBundle/Resources/public/csslint-report

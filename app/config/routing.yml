@@ -1,0 +1,69 @@
+core_bundle:
+    resource: "@CoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin_bundle:
+    resource: "@AdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+user_bundle:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
+#FOSUserBundle
+
+admin_security_login:
+    path: /admin/login
+    defaults: { _controller: FOSUserBundle:Security:login }
+
+admin_security_check:
+    path: /admin/login_check
+    defaults: { _controller: FOSUserBundle:Security:check }
+
+admin_security_logout:
+    path: /admin/logout
+    defaults: { _controller: FOSUserBundle:Security:logout }
+
+admin_resetting_request:
+    path: /admin/request
+    defaults: { _controller: FOSUserBundle:Resetting:request }
+
+
+fos_user_security_login:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /inscription
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+#ElfinderBundle
+elfinder:
+     resource: "@FMElfinderBundle/Resources/config/routing.yml"
+     prefix: /iceadmin
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
