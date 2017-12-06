@@ -14,12 +14,12 @@ NOTE: For older Symfony versions use the corresponding branch.
 For a new project installation, use these commands :
 
     cd path/to/your/webroot
-    wget https://github.com/pierre-vassoilles/symfony2-sonata-base-project/archive/intuitiv_skeleton_sf3.zip
-    unzip intuitiv_skeleton_sf3.zip
-    mv symfony2-sonata-base-project-intuitiv_skeleton_sf3/* ./
-    mv symfony2-sonata-base-project-intuitiv_skeleton_sf3/.gitignore .gitignore
-    rm -rf symfony2-sonata-base-project-intuitiv_skeleton_sf3
-    rm -rf intuitiv_skeleton_sf3.zip 
+    wget https://github.com/pierre-vassoilles/symfony-sonata-skeleton/archive/master.zip
+    unzip master.zip
+    mv symfony-sonata-skeleton-master/* ./
+    mv symfony-sonata-skeleton-master/.gitignore .gitignore
+    rm -rf symfony-sonata-skeleton-master
+    rm -rf master.zip
     
     
 Next, you can use the `install_project` shell to initialize the project :
