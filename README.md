@@ -96,21 +96,21 @@ Or you can manually create a user yourself
     
 ### 3.5 Install npm packages & use grunt to minify CSS/JS
 
-First of all, navigate to `src/CoreBundle/Resources` and install npm packages
+First of all, install npm packages
 
-    npm install
+    npm install --prefix src/CoreBundle/Resources
 
 Then you can use grunt in two ways :
     
 ```bash
-grunt watch # Start a watch task that minify your CSS/JS everytime you save a file
-grunt prod # Launch all tasks (sass, concat CSS / JS, minify CSS / JS, autoprefixer, etc.)
+bin/grunt watch # Start a watch task that minify your CSS/JS everytime you save a file
+bin/grunt prod # Launch all tasks (sass, concat CSS / JS, minify CSS / JS, autoprefixer, etc.)
 ```
 
 
 ## 4. Available Bundles
 
-- **Symfony Standard Edition 3.2**
+- **Symfony Standard Edition 3.4**
 - **Doctrine 2**
 - **FOSUserBundle** : friendsofsymfony/user-bundle
 - **FOS JsRoutingBundle** : friendsofsymfony/jsrouting-bundle

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+GRUNTPATH='src/CoreBundle/Resources'
+GRUNTFILE="$GRUNTPATH/Gruntfile.js"
+TASK=$1
+
+if [ -z ${1+x} ]; then
+    TASK='prod'
+fi
+
+grunt --base=$GRUNTPATH --gruntfile=$GRUNTFILE $TASK

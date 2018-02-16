@@ -11,7 +11,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
-    site_name: 'Base SF2'
+    site_name: 'Base SF3'
 
     web_directory_name: webroot/web
     path_to_upload_dir: ../data/uploads
